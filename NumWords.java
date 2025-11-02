@@ -2,5 +2,13 @@
 public class NumWords {
 	public static void main(String args[]) {
 	    // Replace this comment with your code
+		// צריך להדפיס את הספרות ךפי ספרת אחדות מאות וכן הלאה על המשתנים - אני מאמינה שצריך להשתמש במודלו 
+		int num = Integer.parseInt(args[0]); 
+		int hundreds = (num / 100); 
+		int tens = ((num / 10) % 10);  
+		int ones = ((num % 100));
+		System.out.println(hundreds + " hundreds, " + tens + " tens, " + ones + " ones");
+
+
 	}
 }
