@@ -8,10 +8,10 @@ public class Bill3 {
 		// Replace this comment with the rest of your code   
 		String name1 = args[0];
 		String name2 = args[1];
-		String name3 = args[2];
+		String name3 = args[2]; 
 		int total_price = Integer.parseInt(args[3]);
 	    Double pay_amount = Math.ceil(total_price / 3); // לא בטוחה שזה יעבוד הכוונה שישר יעשה את הפונקציה שמעגלת על השבר  אצטרך לבדוק את זה
-		System.out.println("Dear " + args[2] + ", " + args[1] + " and " + args[0] + ": pay " +  pay_amount + " Shekels each.");
+		System.out.println("Dear " + args[2] + ", " + args[1] + ", and " + args[0] + ": pay " +  pay_amount + " Shekels each.");
 
 	}
 }
