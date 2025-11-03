@@ -12,6 +12,38 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
+		String suffix = (hours < 12) ? "AM" : "PM"; // דרך קצרה לכתוב תנאי IF
         // Replace this comment with the rest of your code
+		// התוכנית מקבלת את הסטרינג נגיד 10:55 ואז צריך לפצל אותו לכל אות ולעשות חיבור בין הסטרינגים ואז המרה לאינט!
+		String mm = (minutes < 10) ? "0" + minutes : "" + minutes;
+	
+		if (hours == 13) {
+			hours = 1;
+		} else if ( hours == 14) {
+				hours = 2;
+		} else if ( hours == 15) {
+				hours = 3;
+		} else if ( hours == 16) {
+				hours = 4;	
+		} else if ( hours == 17) {
+				hours = 5;
+		} else if ( hours == 18) {
+				hours = 6;	
+		} else if ( hours == 19) {
+				hours = 7;	
+		} else if ( hours == 20) {
+				hours = 8;
+		} else if ( hours == 21) {
+				hours = 9;	
+		} else if ( hours == 22) {
+				hours = 10;	
+		} else if ( hours == 23) {
+				hours = 11;
+		} else if ( hours == 24) {
+				hours = 0;	
+		}
+		System.out.println(hours + ":" + mm + " " + suffix);
+			}
+
+
 	}
-}
